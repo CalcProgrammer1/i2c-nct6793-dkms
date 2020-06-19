@@ -1,5 +1,5 @@
 Source: openrgb-dkms-drivers
-Section: unknown
+Section: kernel
 Priority: optional
 Maintainer: crt0mega <crt0mega@c-r-t.tk>
 Build-Depends:
