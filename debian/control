@@ -3,7 +3,7 @@ Section: kernel
 Priority: optional
 Maintainer: crt0mega <crt0mega@c-r-t.tk>
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 11),
  dkms,
 Standards-Version: 4.4.1
 #Homepage: <insert the upstream URL, if relevant>

@@ -14,3 +14,4 @@ To have OpenRGB controlling your LEDs you either need to add your user to the gr
 - [CalcProgrammer1](https://gitlab.com/CalcProgrammer1) for his awesome work on OpenAuraSDK/OpenRGB and his fix for i2c-piix4 (I swear that this was already in here when I forked it),
 - Térence Clastres for the awesome idea of squeezing this patch into a DKMS package and
 - [crt0mega](https://github.com/crt0mega)'s gf for sharing and supporting his obsession with RGB LED stuff and Linux.
+- [SurfsideShip264](https://www.reddit.com/user/SurfsideShip264/) for pointing out an issue with the build-dependencies
