@@ -1,8 +1,10 @@
 Source: openrgb-dkms-drivers
-Section: unknown
+Section: kernel
 Priority: optional
 Maintainer: crt0mega <crt0mega@c-r-t.tk>
-Build-Depends: debhelper-compat (= 11), dkms
+Build-Depends:
+ debhelper-compat (= 11),
+ dkms,
 Standards-Version: 4.4.1
 #Homepage: <insert the upstream URL, if relevant>
 #Vcs-Browser: https://salsa.debian.org/debian/i2c-piix4-aura-dkms-5.4.6
