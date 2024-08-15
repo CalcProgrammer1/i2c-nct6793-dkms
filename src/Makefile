@@ -1,4 +1,4 @@
-obj-m := i2c-piix4.o i2c-nct6775.o
+obj-m := i2c-nct6793.o
 
 ifndef KERNELRELEASE
 KRELEASE := $(shell uname -r)

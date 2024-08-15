@@ -1,6 +1,6 @@
-The Debian Package i2c-piix4-aura-dkms
+The Debian Package i2c-nct6793-dkms
 ----------------------------
 
-See Bug 202587 at Kernel.org Bugzilla for more information
+Debian DKMS package for i2c-nct6793 driver
 
- -- crt0mega <crt0mega@c-r-t.tk>  Sun, 19 Jan 2020 21:18:11 +0100
+ -- Adam Honse <calcprogrammer1@gmail.com>  Wed, 14 Aug 2024 18:29:16 +0500

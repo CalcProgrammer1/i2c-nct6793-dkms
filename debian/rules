@@ -1,38 +1,17 @@
 #!/usr/bin/make -f
-# See debhelper(7) (uncomment to enable)
-# output every command that modifies files on the build system.
-#export DH_VERBOSE = 1
+
 VERSION=$(shell dpkg-parsechangelog |grep ^Version:|cut -d ' ' -f 2)
-
-# see FEATURE AREAS in dpkg-buildflags(1)
-#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-
-# see ENVIRONMENT in dpkg-buildflags(1)
-# package maintainers to append CFLAGS
-#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
-# package maintainers to append LDFLAGS
-#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-
 
 %:
 	dh $@ --with dkms
 
 override_dh_install:
-	# i2c-piix4 source
-	dh_install src/Makefile src/i2c-piix4.c usr/src/openrgb-dkms-drivers-$(VERSION)/
-
-	# i2c-nct6775 source
-	dh_install src/Makefile src/i2c-nct6775.c usr/src/openrgb-dkms-drivers-$(VERSION)/
+	# i2c-nct6793 source
+	dh_install src/Makefile src/i2c-nct6793.c usr/src/i2c-nct6793-dkms-$(VERSION)/
 
 	# modules-load configuration
-	dh_install src/i2c-openrgb.conf usr/lib/modules-load.d/
+	dh_install src/i2c-nct6793.conf usr/lib/modules-load.d/
 
 override_dh_dkms:
 	dh_dkms -V $(VERSION)
-
-
-# dh_make generated override targets
-# This is example for Cmake (See https://bugs.debian.org/641051 )
-#override_dh_auto_configure:
-#	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 

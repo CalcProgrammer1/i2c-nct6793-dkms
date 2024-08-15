@@ -1,21 +1,13 @@
-Source: openrgb-dkms-drivers
+Source: i2c-nct6793-dkms
 Section: kernel
 Priority: optional
-Maintainer: crt0mega <crt0mega@c-r-t.tk>
+Maintainer: Adam Honse <calcprogrammer1@gmail.com>
 Build-Depends:
  debhelper-compat (= 11),
  dkms,
 Standards-Version: 4.4.1
-#Homepage: <insert the upstream URL, if relevant>
-#Vcs-Browser: https://salsa.debian.org/debian/i2c-piix4-aura-dkms-5.4.6
-#Vcs-Git: https://salsa.debian.org/debian/i2c-piix4-aura-dkms-5.4.6.git
 
-Package: openrgb-dkms-drivers
+Package: i2c-nct6793-dkms
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, dkms
-Description: OpenRGB kernel patch includes the i2c-piix4 kernel driver,
- patched to enable a second SMBUS controller on AMD AM4 chipsets (see
- Bug 202587 at Kernel.org Bugzilla), as well as the i2c-nct6775 kernel
- driver which provides access to Nuvoton Super-IO chips' SMBus
- controllers. This package provides a patched module ready for DKMS as
- well as some helper files found at Archlinux' AUR.
+Description: The i2c-nct6793 kernel driver which provides access to Nuvoton Super-IO chips' SMBus controller.
